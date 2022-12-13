@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>halmanan minuman</title>
+    <script src="{% static 'fontawesome/all.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <main>
+        <button type="button" class="btn btn-warning"><a href="{% url 'makanan'%}">Tabel Makanan</a></button>
+        <button type="button" class="btn btn-warning"><a href="{% url 'minuman'%}">Tabel Minuman</a></button>
+        <input type="checkbox" id="check">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fa fa-arrow-right" id="open"></i>
+        </label>
+        <div class="sidebar">
+            <div class="top">
+                Pilihan
+            </div>  
+            <ul>
+                <li><a class="#" href="/"><i class="fa fa-home"></i> Home </a></li>
+                <li><a class="#" href="/produk.html"><i class="fa fa-shopping-basket"></i> Produk</a></li>
+                
+            </ul>
+        </div>
+        <section>
+                <h1>Menu Makanan & Minuman</h1>
+                <center>
+                    <img src="{%static 'img/menu.jpg' %}" class=" w-50"alt="">
+                </center>
+        </section>
+        
+    </main>
+</body>
+</html>
